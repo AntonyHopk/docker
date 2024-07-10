@@ -9,6 +9,4 @@ LABEL authors="antonkhomenko"
 WORKDIR /opt/app
 COPY --from=builder /opt/app/target/*.jar /opt/app/rest.jar
 
-EXPOSE 8081
-
 ENTRYPOINT ["java","-Dspring.profiles.active=standalone", "-jar","rest.jar"]

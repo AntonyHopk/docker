@@ -1,7 +1,7 @@
 users:
   service:
     list:
-      uri: "http://192.168.1.96:8081"
+      uri: "http://192.168.1.38:8081"
     username: Superuser
     password: admin
 spring:
@@ -15,3 +15,5 @@ spring:
   flyway:
     schemas:
       - user_management
+server:
+  port:
